@@ -37,12 +37,6 @@ steps:
     parameters:
       appFolder: $(appFolder)
 
-  - template: ci/templates/component-tests-template.yml
-    parameters:
-      imageNameOfComponentTest: $(imageNameOfComponentTest)
-      componentTestFolder: $(componentTestFolder)
-      pathTestResultFiles: "**/component-test/results/junit.xml"
-
   - template: ci/templates/pre-deploy-template.yml
 
   - template: ci/templates/docker-config-template.yml
