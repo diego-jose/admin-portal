@@ -1,0 +1,19 @@
+{
+    "printWidth": 100,
+    "singleQuote": true,
+    "useTabs": true,
+    "overrides": [
+        {
+            "files": "*.md",
+            "options": {
+                "parser": "markdown"
+            }
+        },
+        {
+            "files": "*.feature",
+            "options": {
+                "parser": "cucumber"
+            }
+        }
+    ]
+}

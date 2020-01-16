@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/routes/AppRouter.test.jsx">
+        <testCase name="AppRouter should AppRouter was created" duration="10"/>
+        <testCase name="AppRouter should prop path /login is in Route" duration="4"/>
+        <testCase name="AppRouter should prop component is in Route and equal LoginRoute" duration="2"/>
+        <testCase name="AppRouter should prop path / is in Route" duration="1"/>
+        <testCase name="AppRouter should prop component is in Route and equal MainRoute" duration="1"/>
+        <testCase name="AppRouter should check if handlleRouteChange has been called" duration="4"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/bootstrap/App.test.jsx">
+        <testCase name="App should render an AppRouter" duration="27"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/routes/login/components/LoginFormView.test.jsx">
+        <testCase name="LoginFormView test unit should exists component" duration="15"/>
+        <testCase name="LoginFormView test unit should have placeHolder of email with string user @ ab-inb ... " duration="18"/>
+        <testCase name="LoginFormView test unit should be a button with type submit" duration="5"/>
+        <testCase name="LoginFormView test unit should have title B2B Admin Portal" duration="4"/>
+        <testCase name="LoginFormView test unit should have subTitle Enter Your E-mail " duration="3"/>
+        <testCase name="LoginFormView test unit should simulate click in button enter when input is empty and show message Required" duration="163"/>
+        <testCase name="LoginFormView test unit should simulate click in button enter when input have 123 and show message Invalid email" duration="90"/>
+        <testCase name="LoginFormView test unit should simulate click in button enter when input have domain email diferente of ABI and show message This email cant be used to log in " duration="73"/>
+        <testCase name="LoginFormView test unit should simulate click in button enter when input have domain email equals of ABI Email valid  " duration="49"/>
+        <testCase name="LoginFormView test unit should simulate onBlur in input when input is empty and show message Required" duration="31"/>
+        <testCase name="LoginFormView test unit should simulate onBlur in input when input is 123 and show message Invalid email" duration="51"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/routes/login/LoginRoute.test.jsx">
+        <testCase name="Loginroute should Login Route was created" duration="3"/>
+        <testCase name="Loginroute should Login Form is inside Login Route" duration="5"/>
+        <testCase name="Loginroute should check all the props of Row" duration="6"/>
+        <testCase name="Loginroute should check all the props of Col" duration="8"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/services/auth/AuthService.test.jsx">
+        <testCase name="AuthService login should pass email and return router /login?email=email" duration="3"/>
+        <testCase name="AuthService isAuthenticated should check localStorage and return false and check called of localStorage.getItem" duration="1"/>
+        <testCase name="AuthService isAuthenticated should check local Storage, insert in local storage value valid and return true and check called of localStorage.getItem" duration="1"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/routes/login/components/LoginForm.test.jsx">
+        <testCase name="LoginForm should LoginForm be instantiated correctly" duration="2"/>
+        <testCase name="LoginForm should set the onSubmit prop correctly" duration="2"/>
+        <testCase name="LoginForm should onSubmit do nothing when it was called" duration="1"/>
+        <testCase name="LoginForm isEmailValid was defined" duration="1"/>
+        <testCase name="LoginForm should validate that teste@gmail.com is an invalid email" duration="1"/>
+        <testCase name="LoginForm should validate that teste@yahoo.com is an invalid email" duration="2"/>
+        <testCase name="LoginForm should validate that teste@email.com is an invalid email" duration="1"/>
+        <testCase name="LoginForm should validate that @anheuser-busch.com is a valid domain" duration="0"/>
+        <testCase name="LoginForm should validate that @ab-inbev.com is a valid domain" duration="1"/>
+        <testCase name="LoginForm should validate that @cnd.com.do is a valid domain" duration="1"/>
+        <testCase name="LoginForm should validate that @fuzzproductions.com is a valid domain" duration="1"/>
+        <testCase name="LoginForm should validate that @gmodelo.com.mx is a valid domain" duration="1"/>
+        <testCase name="LoginForm should validate called onSubmit once" duration="3"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/services/Palindrome.test.jsx">
+        <testCase name="Palindrome Test  should word noon is palindrome" duration="1"/>
+        <testCase name="Palindrome Test  should word box is palindrome" duration="1"/>
+        <testCase name="Palindrome Test  should word neon is palindrome" duration="0"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/bootstrap/AppHistory.test.jsx">
+        <testCase name="AppHistory should check the callback history is redirect to main page" duration="1"/>
+        <testCase name="AppHistory should check the callback history is redirect to login" duration="1"/>
+        <testCase name="AppHistory should check the callback history is redirect to main page when pathName is /login and is Auth" duration="1"/>
+        <testCase name="AppHistory should check the callback history is redirect to any page" duration="1"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/services/navigation/NavigationService.test.jsx">
+        <testCase name="Navigation should check called of history.push " duration="2"/>
+    </file>
+    <file path="/home/diegojs/react/trunk/admin-portal/app/src/routes/main/MainRoute.test.jsx">
+        <testCase name="MainRouter should Main Route was created" duration="1"/>
+        <testCase name="MainRouter should prop path is in Route" duration="1"/>
+    </file>
+</testExecutions>

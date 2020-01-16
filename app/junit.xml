@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="48" failures="0" time="7.195">
+  <testsuite name="src/routes/AppRouter.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:17" time="3.329" tests="6">
+    <testcase classname="AppRouter - should AppRouter was created" name="AppRouter - should AppRouter was created" time="0.01">
+    </testcase>
+    <testcase classname="AppRouter - should prop path /login is in Route" name="AppRouter - should prop path /login is in Route" time="0.004">
+    </testcase>
+    <testcase classname="AppRouter - should prop component is in Route and equal LoginRoute" name="AppRouter - should prop component is in Route and equal LoginRoute" time="0.002">
+    </testcase>
+    <testcase classname="AppRouter - should prop path / is in Route" name="AppRouter - should prop path / is in Route" time="0.001">
+    </testcase>
+    <testcase classname="AppRouter - should prop component is in Route and equal MainRoute" name="AppRouter - should prop component is in Route and equal MainRoute" time="0.001">
+    </testcase>
+    <testcase classname="AppRouter - should check if handlleRouteChange has been called" name="AppRouter - should check if handlleRouteChange has been called" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/bootstrap/App.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:17" time="3.437" tests="1">
+    <testcase classname="App - should render an AppRouter" name="App - should render an AppRouter" time="0.027">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/routes/login/components/LoginFormView.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:17" time="3.898" tests="11">
+    <testcase classname="LoginFormView test unit - should exists component" name="LoginFormView test unit - should exists component" time="0.015">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should have placeHolder of email with string user @ ab-inb ... " name="LoginFormView test unit - should have placeHolder of email with string user @ ab-inb ... " time="0.018">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should be a button with type submit" name="LoginFormView test unit - should be a button with type submit" time="0.005">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should have title B2B Admin Portal" name="LoginFormView test unit - should have title B2B Admin Portal" time="0.004">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should have subTitle Enter Your E-mail " name="LoginFormView test unit - should have subTitle Enter Your E-mail " time="0.003">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should simulate click in button enter when input is empty and show message Required" name="LoginFormView test unit - should simulate click in button enter when input is empty and show message Required" time="0.163">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should simulate click in button enter when input have 123 and show message Invalid email" name="LoginFormView test unit - should simulate click in button enter when input have 123 and show message Invalid email" time="0.09">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should simulate click in button enter when input have domain email diferente of ABI and show message This email cant be used to log in " name="LoginFormView test unit - should simulate click in button enter when input have domain email diferente of ABI and show message This email cant be used to log in " time="0.073">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should simulate click in button enter when input have domain email equals of ABI Email valid  " name="LoginFormView test unit - should simulate click in button enter when input have domain email equals of ABI Email valid  " time="0.049">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should simulate onBlur in input when input is empty and show message Required" name="LoginFormView test unit - should simulate onBlur in input when input is empty and show message Required" time="0.031">
+    </testcase>
+    <testcase classname="LoginFormView test unit - should simulate onBlur in input when input is 123 and show message Invalid email" name="LoginFormView test unit - should simulate onBlur in input when input is 123 and show message Invalid email" time="0.051">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/routes/login/LoginRoute.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:20" time="0.705" tests="4">
+    <testcase classname="Loginroute - should Login Route was created" name="Loginroute - should Login Route was created" time="0.003">
+    </testcase>
+    <testcase classname="Loginroute - should Login Form is inside Login Route" name="Loginroute - should Login Form is inside Login Route" time="0.005">
+    </testcase>
+    <testcase classname="Loginroute - should check all the props of Row" name="Loginroute - should check all the props of Row" time="0.006">
+    </testcase>
+    <testcase classname="Loginroute - should check all the props of Col" name="Loginroute - should check all the props of Col" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/auth/AuthService.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:21" time="0.276" tests="3">
+    <testcase classname="AuthService &gt; login - should pass email and return router /login?email=email" name="AuthService &gt; login - should pass email and return router /login?email=email" time="0.003">
+    </testcase>
+    <testcase classname="AuthService &gt; isAuthenticated - should check localStorage and return false and check called of localStorage.getItem" name="AuthService &gt; isAuthenticated - should check localStorage and return false and check called of localStorage.getItem" time="0.001">
+    </testcase>
+    <testcase classname="AuthService &gt; isAuthenticated - should check local Storage, insert in local storage value valid and return true and check called of localStorage.getItem" name="AuthService &gt; isAuthenticated - should check local Storage, insert in local storage value valid and return true and check called of localStorage.getItem" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/routes/login/components/LoginForm.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:21" time="0.76" tests="13">
+    <testcase classname="LoginForm - should LoginForm be instantiated correctly" name="LoginForm - should LoginForm be instantiated correctly" time="0.002">
+    </testcase>
+    <testcase classname="LoginForm - should set the onSubmit prop correctly" name="LoginForm - should set the onSubmit prop correctly" time="0.002">
+    </testcase>
+    <testcase classname="LoginForm - should onSubmit do nothing when it was called" name="LoginForm - should onSubmit do nothing when it was called" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - isEmailValid was defined" name="LoginForm - isEmailValid was defined" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - should validate that teste@gmail.com is an invalid email" name="LoginForm - should validate that teste@gmail.com is an invalid email" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - should validate that teste@yahoo.com is an invalid email" name="LoginForm - should validate that teste@yahoo.com is an invalid email" time="0.002">
+    </testcase>
+    <testcase classname="LoginForm - should validate that teste@email.com is an invalid email" name="LoginForm - should validate that teste@email.com is an invalid email" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - should validate that @anheuser-busch.com is a valid domain" name="LoginForm - should validate that @anheuser-busch.com is a valid domain" time="0">
+    </testcase>
+    <testcase classname="LoginForm - should validate that @ab-inbev.com is a valid domain" name="LoginForm - should validate that @ab-inbev.com is a valid domain" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - should validate that @cnd.com.do is a valid domain" name="LoginForm - should validate that @cnd.com.do is a valid domain" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - should validate that @fuzzproductions.com is a valid domain" name="LoginForm - should validate that @fuzzproductions.com is a valid domain" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - should validate that @gmodelo.com.mx is a valid domain" name="LoginForm - should validate that @gmodelo.com.mx is a valid domain" time="0.001">
+    </testcase>
+    <testcase classname="LoginForm - should validate called onSubmit once" name="LoginForm - should validate called onSubmit once" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/Palindrome.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:20" time="1.429" tests="3">
+    <testcase classname="Palindrome Test  - should word noon is palindrome" name="Palindrome Test  - should word noon is palindrome" time="0.001">
+    </testcase>
+    <testcase classname="Palindrome Test  - should word box is palindrome" name="Palindrome Test  - should word box is palindrome" time="0.001">
+    </testcase>
+    <testcase classname="Palindrome Test  - should word neon is palindrome" name="Palindrome Test  - should word neon is palindrome" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/bootstrap/AppHistory.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:21" time="0.411" tests="4">
+    <testcase classname="AppHistory - should check the callback history is redirect to main page" name="AppHistory - should check the callback history is redirect to main page" time="0.001">
+    </testcase>
+    <testcase classname="AppHistory - should check the callback history is redirect to login" name="AppHistory - should check the callback history is redirect to login" time="0.001">
+    </testcase>
+    <testcase classname="AppHistory - should check the callback history is redirect to main page when pathName is /login and is Auth" name="AppHistory - should check the callback history is redirect to main page when pathName is /login and is Auth" time="0.001">
+    </testcase>
+    <testcase classname="AppHistory - should check the callback history is redirect to any page" name="AppHistory - should check the callback history is redirect to any page" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/services/navigation/NavigationService.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:21" time="0.325" tests="1">
+    <testcase classname="Navigation - should check called of history.push " name="Navigation - should check called of history.push " time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/routes/main/MainRoute.test.jsx" errors="0" failures="0" skipped="0" timestamp="2019-11-18T16:18:21" time="0.372" tests="2">
+    <testcase classname="MainRouter - should Main Route was created" name="MainRouter - should Main Route was created" time="0.001">
+    </testcase>
+    <testcase classname="MainRouter - should prop path is in Route" name="MainRouter - should prop path is in Route" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

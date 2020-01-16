@@ -1,0 +1,19 @@
+parameters:
+  imageNameOfComponentTest: ''
+  componentTestFolder: ''
+  pathTestResultFiles: ''
+
+steps:
+- script: | 
+      cd ${{ parameters.componentTestFolder }} && docker-compose build 
+      docker-compose up --abort-on-container-exit --exit-code-from ${{ parameters.imageNameOfComponentTest }}
+  displayName: 'Run Component tests'
+
+- task: PublishTestResults@2
+  displayName: 'Tests result cypress'
+  inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: ${{ parameters.pathTestResultFiles }} 
+      mergeTestResults: false
+      testRunTitle: 'Component Tests'
+      failTaskOnFailedTests: true

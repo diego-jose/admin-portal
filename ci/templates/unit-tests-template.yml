@@ -1,0 +1,41 @@
+parameters:
+  appFolder: ""
+
+steps:
+  - script: |
+      (cd ${{ parameters.appFolder }} && yarn run coverage && cd ..)
+    displayName: "Run Unit test"
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: "JUnit"
+      testResultsFiles: "**/${{ parameters.appFolder }}/junit.xml"
+      mergeTestResults: false
+      testRunTitle: "Unit Tests"
+      failTaskOnFailedTests: true
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: "cobertura"
+      summaryFileLocation: "**/${{ parameters.appFolder }}/coverage/cobertura-coverage.xml"
+
+  - task: SonarCloudPrepare@1
+    displayName: "Prepare analysis on SonarCloud"
+    inputs:
+      SonarCloud: "SonarCloud - AB InBev - B2B"
+      organization: "ab-inbev"
+      scannerMode: "CLI"
+      configMode: "file"
+      configFile: "./sonar-project.properties"
+
+  - task: SonarCloudAnalyze@1
+    displayName: "Run code analysis"
+
+  - task: SonarCloudPublish@1
+    inputs:
+      pollingTimeoutSec: "300"
+
+  - task: sonarcloud-buildbreaker@2
+    inputs:
+      SonarCloud: "SonarCloud - AB InBev - B2B"
+      organization: "ab-inbev"

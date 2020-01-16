@@ -1,0 +1,12 @@
+steps:
+  - task: HelmInstaller@1
+    displayName: "Install Helm 2.11.0"
+    inputs:
+      helmVersion: 2.11.0
+
+  - task: AzureCLI@1
+    displayName: "Azure CLI Login"
+    inputs:
+      azureSubscription: "B2B Services PROD"
+      scriptLocation: inlineScript
+      inlineScript: "az acr login --name $(azure-registry-name)"

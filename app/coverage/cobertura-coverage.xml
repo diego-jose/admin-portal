@@ -1,0 +1,311 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="95" lines-covered="95" line-rate="1" branches-valid="26" branches-covered="26" branch-rate="1" timestamp="1574093903128" complexity="0" version="0.1">
+  <sources>
+    <source>/home/diegojs/react/trunk/admin-portal/app</source>
+  </sources>
+  <packages>
+    <package name="src" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="react-app-env.d.ts" filename="src/react-app-env.d.ts" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.bootstrap" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="App.tsx" filename="src/bootstrap/App.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_1)" hits="1" signature="()V">
+              <lines>
+                <line number="10" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="AppHistory.ts" filename="src/bootstrap/AppHistory.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="handleRouteChange" hits="6" signature="()V">
+              <lines>
+                <line number="6" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="1" signature="()V">
+              <lines>
+                <line number="15" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="3" branch="false"/>
+            <line number="2" hits="3" branch="false"/>
+            <line number="4" hits="3" branch="false"/>
+            <line number="7" hits="6" branch="false"/>
+            <line number="8" hits="6" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="9" hits="2" branch="false"/>
+            <line number="10" hits="4" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="11" hits="2" branch="false"/>
+            <line number="15" hits="3" branch="false"/>
+            <line number="17" hits="3" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.i18n" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="LoginFormMessage.tsx" filename="src/i18n/LoginFormMessage.tsx" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="1" hits="5" branch="false"/>
+            <line number="2" hits="5" branch="false"/>
+            <line number="3" hits="5" branch="false"/>
+            <line number="4" hits="5" branch="false"/>
+            <line number="5" hits="5" branch="false"/>
+            <line number="6" hits="5" branch="false"/>
+            <line number="7" hits="5" branch="false"/>
+            <line number="8" hits="5" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.routes" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="AppRouter.tsx" filename="src/routes/AppRouter.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="AppRouter" hits="6" signature="()V">
+              <lines>
+                <line number="7" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="1" signature="()V">
+              <lines>
+                <line number="8" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="2" branch="false"/>
+            <line number="2" hits="2" branch="false"/>
+            <line number="3" hits="2" branch="false"/>
+            <line number="4" hits="2" branch="false"/>
+            <line number="5" hits="2" branch="false"/>
+            <line number="8" hits="6" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="12" hits="6" branch="false"/>
+            <line number="19" hits="2" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.routes.login" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="LoginRoute.tsx" filename="src/routes/login/LoginRoute.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="LoginRoute" hits="4" signature="()V">
+              <lines>
+                <line number="6" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="3" branch="false"/>
+            <line number="2" hits="3" branch="false"/>
+            <line number="3" hits="3" branch="false"/>
+            <line number="4" hits="3" branch="false"/>
+            <line number="7" hits="4" branch="false"/>
+            <line number="16" hits="3" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.routes.login.components" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="LoginForm.tsx" filename="src/routes/login/components/LoginForm.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="LoginForm" hits="13" signature="()V">
+              <lines>
+                <line number="6" hits="13"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="2" signature="()V">
+              <lines>
+                <line number="7" hits="2"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="8" signature="()V">
+              <lines>
+                <line number="11" hits="8"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="4" branch="false"/>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="7" hits="13" branch="false"/>
+            <line number="8" hits="2" branch="false"/>
+            <line number="11" hits="13" branch="false"/>
+            <line number="12" hits="8" branch="false"/>
+            <line number="15" hits="13" branch="false"/>
+            <line number="18" hits="4" branch="false"/>
+          </lines>
+        </class>
+        <class name="LoginFormView.tsx" filename="src/routes/login/components/LoginFormView.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_2)" hits="10" signature="()V">
+              <lines>
+                <line number="22" hits="10"/>
+              </lines>
+            </method>
+            <method name="LoginFormView" hits="11" signature="()V">
+              <lines>
+                <line number="33" hits="11"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="1" signature="()V">
+              <lines>
+                <line number="36" hits="1"/>
+              </lines>
+            </method>
+            <method name="(anonymous_5)" hits="10" signature="()V">
+              <lines>
+                <line number="41" hits="10"/>
+              </lines>
+            </method>
+            <method name="(anonymous_6)" hits="33" signature="()V">
+              <lines>
+                <line number="50" hits="33"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="5" branch="false"/>
+            <line number="2" hits="5" branch="false"/>
+            <line number="3" hits="5" branch="false"/>
+            <line number="4" hits="5" branch="false"/>
+            <line number="5" hits="5" branch="false"/>
+            <line number="15" hits="5" branch="false"/>
+            <line number="16" hits="5" branch="false"/>
+            <line number="22" hits="5" branch="false"/>
+            <line number="23" hits="10" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="24" hits="2" branch="false"/>
+            <line number="25" hits="8" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="26" hits="4" branch="false"/>
+            <line number="27" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="28" hits="2" branch="false"/>
+            <line number="30" hits="2" branch="false"/>
+            <line number="36" hits="11" branch="false"/>
+            <line number="37" hits="1" branch="false"/>
+            <line number="38" hits="1" branch="false"/>
+            <line number="41" hits="11" branch="false"/>
+            <line number="42" hits="10" branch="false"/>
+            <line number="43" hits="10" branch="false"/>
+            <line number="44" hits="10" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="45" hits="8" branch="false"/>
+            <line number="47" hits="10" branch="false"/>
+            <line number="50" hits="11" branch="false"/>
+            <line number="51" hits="33" branch="false"/>
+            <line number="68" hits="11" branch="false"/>
+            <line number="75" hits="5" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.routes.main" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="MainRoute.tsx" filename="src/routes/main/MainRoute.tsx" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="MainRoute" hits="2" signature="()V">
+              <lines>
+                <line number="3" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="3" branch="false"/>
+            <line number="4" hits="2" branch="false"/>
+            <line number="6" hits="3" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.services" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="Palindrome.ts" filename="src/services/Palindrome.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="isPalindrome" hits="6" signature="()V">
+              <lines>
+                <line number="1" hits="6"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="6" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="5" hits="5" branch="false"/>
+            <line number="6" hits="5" branch="false"/>
+            <line number="7" hits="5" branch="false"/>
+            <line number="8" hits="5" branch="true" condition-coverage="100% (2/2)"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.services.auth" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="AuthService.ts" filename="src/services/auth/AuthService.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="login" hits="1" signature="()V">
+              <lines>
+                <line number="1" hits="1"/>
+              </lines>
+            </method>
+            <method name="isAuthenticated" hits="4" signature="()V">
+              <lines>
+                <line number="5" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="6" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="5" hits="6" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.services.navigation" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="NavigationService.ts" filename="src/services/navigation/NavigationService.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="goToRoute" hits="1" signature="()V">
+              <lines>
+                <line number="3" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

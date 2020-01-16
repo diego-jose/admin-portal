@@ -1,0 +1,37 @@
+parameters:
+  kubernetesCluster: ""
+  namespace: ""
+  command: ""
+  chartPath: ""
+  deployVersion: ""
+  projectName: ""
+
+steps:
+  - script: |
+      docker build -t $(registryServerName)/${{ parameters.projectName}}:${{ parameters.deployVersion}} .
+    displayName: "Docker Build and Tag"
+
+  - script: |
+      docker push $(registryServerName)/${{ parameters.projectName}}:${{ parameters.deployVersion}}
+    displayName: "Docker Push"
+
+  - task: HelmDeploy@0
+    displayName: "Helm package"
+    inputs:
+      azureSubscription: "B2B Services NON-PROD"
+      azureResourceGroup: "ABI-B2B-RG-GB-DEV"
+      kubernetesCluster: ${{ parameters.kubernetesCluster}}
+      namespace: ${{ parameters.namespace }}
+      command: ${{ parameters.command }}
+      chartPath: ${{ parameters.chartPath }}
+      chartVersion: "$(build.buildId)"
+      arguments: "--app-version ${{ parameters.deployVersion}} --debug"
+
+  - task: AzureCLI@1
+    displayName: "Helm Push"
+    inputs:
+      azureSubscription: "B2B Services PROD"
+      scriptLocation: inlineScript
+      inlineScript: |
+        az acr login --name $(azure-registry-name)     
+        az acr helm push --name $(azure-registry-name) $(build.artifactStagingDirectory)/$(projectName)-$(build.buildId).tgz

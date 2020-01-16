@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-portal
+spec:
+  replicas: {{ .Values.pods.replicas }}
+  selector:
+    matchLabels:
+      app: admin-portal
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: admin-portal
+        release: {{ .Release.Name }}
+    spec:
+      terminationGracePeriodSeconds: 180
+      imagePullSecrets:
+        - name: acr-auth-admin-portal
+      containers:
+        - name: admin-portal
+          image: "b2bgbacrprod.azurecr.io/admin-portal:{{ .Chart.AppVersion }}"
+          imagePullPolicy: Always
+          ports:
+            - name: port-shell-app
+              containerPort: 80
+          resources:
+            limits:
+              memory: 1024Mi
+            requests:
+              memory: 512Mi
