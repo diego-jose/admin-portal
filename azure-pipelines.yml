@@ -19,8 +19,10 @@ steps:
     (cd app && yarn install && cd ..)
     (cd app && yarn run build && cd ..)
   displayName: 'npm install and build'
-- task: Bash@3
+- task: DockerInstaller@0
   inputs:
-    targetType: 'inline'
-    script: |
-      ./stryker-run.sh
+    dockerVersion: '17.09.0-ce'
+
+- script: |
+   docker build -t stryker .
+   docker run --volume $(pwd)/reports:/app/reports:Z stryker
