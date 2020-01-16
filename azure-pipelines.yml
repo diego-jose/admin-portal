@@ -19,3 +19,8 @@ steps:
     (cd app && yarn install && cd ..)
     (cd app && yarn run build && cd ..)
   displayName: 'npm install and build'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      ./stryker-run.sh
